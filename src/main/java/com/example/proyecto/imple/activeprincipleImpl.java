@@ -6,8 +6,6 @@ import com.example.proyecto.model.activeprinciple;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-
 import java.util.List;
 import java.util.Optional;
 
@@ -18,25 +16,25 @@ public class activeprincipleImpl implements activeprinciple {
     private activeprincipleRepository repository;
 
     @Transactional
-    @Override
+    
     public List<activeprinciple> findAll() {
         return (List<activeprinciple>) repository.findAll();
     }
 
     @Transactional
-    @Override
+ 
     public Optional<activeprinciple> findById(Integer acodigoactiveprinciple) {
         return repository.findById(acodigoactiveprinciple);
     }
 
     @Transactional
-    @Override
+    
     public activeprinciple save(activeprinciple activeprinciple) {
         return repository.save(activeprinciple);
     }
 
     @Transactional
-    @Override
+  
     public Optional<activeprinciple> update(Integer acodigoactiveprinciple, activeprinciple activeprinciple) {
         Optional<activeprinciple> activeprincipleOpt = repository.findById(acodigoactiveprinciple);
         if (activeprincipleOpt.isPresent()) {
@@ -59,7 +57,7 @@ public class activeprincipleImpl implements activeprinciple {
     }
 
     @Transactional
-    @Override
+   
     public Optional<activeprinciple> deleteById(Integer acodigoactiveprinciple) {
         Optional<activeprinciple> activeprincipleOpt = repository.findById(acodigoactiveprinciple);
         activeprincipleOpt.ifPresent(activeprincipleItem -> {
