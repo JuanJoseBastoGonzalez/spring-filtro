@@ -4,12 +4,14 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.example.proyecto.model.farmacymedicine;
 import com.example.proyecto.repository.farmacymedicineRepository;
+
 import jakarta.transaction.Transactional;
 
 @Service
-public class farmacymedicinempl implements farmacymedicine {
+public class farmacymedicinempl  {
 
     @Autowired
     private farmacymedicineRepository repository;

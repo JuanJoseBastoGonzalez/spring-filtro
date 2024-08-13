@@ -1,14 +1,17 @@
 package com.example.proyecto.imple;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.proyecto.repository.farmacyRepository;
-import jakarta.transaction.Transactional;
+
 import com.example.proyecto.model.farmacy;
+import com.example.proyecto.repository.farmacyRepository;
+
+import jakarta.transaction.Transactional;
 
 @Service
-public class farmacympl implements farmacy{
+public class farmacympl {
 
     @Autowired
     private farmacyRepository repository;

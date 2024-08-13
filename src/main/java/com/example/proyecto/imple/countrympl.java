@@ -9,7 +9,7 @@ import com.example.proyecto.model.country;
 import com.example.proyecto.repository.countryRepository;
 
 @Service
-public class countrympl extends country {
+public class countrympl  {
     @Autowired
     private countryRepository countryrepository;
 

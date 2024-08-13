@@ -1,14 +1,15 @@
 package com.example.proyecto.imple;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.stereotype.Service;
+
 import com.example.proyecto.model.customer;
 import com.example.proyecto.repository.customerRepository;
 
 @Service
-public class customermpl implements customer {
+public class customermpl  {
     @Autowired
     private customerRepository repository;
 
