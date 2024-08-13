@@ -4,8 +4,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.example.proyecto.model.country;
-import com.example.proyecto.model.country;
-
+import org.springframework.http.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/country")

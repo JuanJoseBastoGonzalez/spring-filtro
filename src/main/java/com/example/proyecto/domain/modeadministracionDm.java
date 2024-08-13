@@ -9,6 +9,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="modeadministracion")
 public class modeadministracionDm {
+    
  @Id 
  @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
