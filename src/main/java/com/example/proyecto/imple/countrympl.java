@@ -21,8 +21,8 @@ public class countrympl extends country {
 
     @Transactional
     
-    public Optional<country> getCountry(String codeconuntry) {
-        return countryrepository.findById(codeconuntry);
+    public Optional<country> getCountry(String codecity) {
+        return countryrepository.findAllById(codecity);
     }
 
     @Transactional

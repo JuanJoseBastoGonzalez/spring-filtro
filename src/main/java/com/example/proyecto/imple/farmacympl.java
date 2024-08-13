@@ -8,17 +8,19 @@ import jakarta.transaction.Transactional;
 import com.example.proyecto.model.farmacy;
 
 @Service
-public class farmacympl implements {
+public class farmacympl implements farmacy{
 
     @Autowired
     private farmacyRepository repository;
-
+    
+@Transactional
     public List<farmacy> getAll() {
         return repository.findAll();
     }
 
-    public farmacy getFarmaciaById(Long id) {
-        return repository.findById(id).orElse(null);
+    @Transactional
+    public farmacy getFarmaciaById(int idfarmacy) {
+        return repository.findById(idfarmacy).orElse(null);
     }
 
     @Transactional
@@ -32,8 +34,8 @@ public class farmacympl implements {
     }
 
     @Transactional
-    public void deleteFarmacia(Long id) {
-        repository.deleteById(id);
+    public void deleteFarmacia(int idfarmacy) {
+        repository.deleteById(idfarmacy);
     }
 
 }
